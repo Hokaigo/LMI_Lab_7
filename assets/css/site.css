@@ -154,7 +154,7 @@ label
 
 ul
 {
-	padding-left:0px;
+	padding-left:0;
 	list-style:none;
 }
 
@@ -180,3 +180,23 @@ input:focus, select:focus
 {
 	border:2px solid red !important;
 }
+
+.skip-to-content-link {
+	background: lightgray;
+	color: #111111;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 15px 20px;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	z-index: 100;
+	top: -100px;
+	transition: top 0.3s;
+}
+
+.skip-to-content-link:focus {
+	top: 0;
+}
+
